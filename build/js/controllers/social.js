@@ -10,5 +10,14 @@ exports.default = {
     },
     img(req, res) {
         return res.sendFile(path_1.default.join(__dirname, '../../build/assets/icon.png'));
+    },
+    icon_fedora(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/iconfedora.png'));
+    },
+    icon_gentoo(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/icongentoo.png'));
+    },
+    icon_ubuntu(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/iconubuntu.png'));
     }
 };

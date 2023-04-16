@@ -19,5 +19,20 @@ exports.default = {
     },
     icon_ubuntu(req, res) {
         return res.sendFile(path_1.default.join(__dirname, '../../build/assets/iconubuntu.png'));
+    },
+    seed(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/evilseed.mp3'));
+    },
+    seed_img(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/evilseed.jpg'));
+    },
+    shigeo_img(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/shigeo.jpg'));
+    },
+    tapes_img(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/tapes.jpg'));
+    },
+    eyes_img(req, res) {
+        return res.sendFile(path_1.default.join(__dirname, '../../build/assets/eyes.jpg'));
     }
 };

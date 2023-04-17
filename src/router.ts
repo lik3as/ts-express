@@ -9,8 +9,7 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.get('/social', social_ctrl.page);
-router.get('/icon.png', social_ctrl.img);
 router.get('/evilseed.mp3', social_ctrl.seed);
-router.get('/assets', social_ctrl.img_assets);
+router.get('/assets', social_ctrl.assets, social_ctrl.assets_styles);
 
 export default router;

@@ -26,19 +26,9 @@ export default {
     return res.sendFile(path.join(__dirname, '../../build/assets/evilseed.mp3'));
   },
 
-  seed_img(req: Request, res: Response){
-    return res.sendFile(path.join(__dirname, '../../build/assets/evilseed.jpg'));
-  },
+  img_assets(req: Request, res: Response){
 
-  shigeo_img(req: Request, res: Response){
-    return res.sendFile(path.join(__dirname, '../../build/assets/shigeo.jpg'));
-  },
-
-  tapes_img(req: Request, res: Response){
-    return res.sendFile(path.join(__dirname, '../../build/assets/tapes.jpg'));
-  },
-
-  eyes_img(req: Request, res: Response){
-    return res.sendFile(path.join(__dirname, '../../build/assets/eyes.jpg'))
+    const img_name: string = req.query.img as string;
+    return res.sendFile(path.join(__dirname, `../../build/assets/${img_name}`))
   }
 }

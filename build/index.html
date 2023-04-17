@@ -1,82 +1,67 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
-  <title>links</title>
-  <style>
-    body{
-      background-color: blanchedalmond;
-    }
-    #icon{
-      border-radius: 15%;
-    }
-    div{
-      text-align: center;
-    }
-    #content{
-      font-size: 18px;
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-    .wrapper{
-      justify-content: center;
-      display: grid;
-      grid-template-columns: 350px 350px;
-    }
-  </style>
+  <link rel="shortcut icon" href="/assets?img=favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets?style=index.css">
+  <title>Portifólio</title>
 </head>
 <body>
-  <div id="icon">
-    <h1>Este é meu perfil ´^´ Bem vindo!</h1>
-    <img src="icon.png">
+  <div id="header">
+    <div class="title"><h1>Este é meu perfil, Bem vindo!</h1></div>
+    <img id="icon" src="/assets?img=icon.jpg">
     <span><br></span>
   </div>
   <div id="content">
-    <p>Meu nome é davi, sou <strong>desenvolvedor</strong> contratado atualmetne pela
-      NCA Tech, tenho curso técnico em programação de jogos no<strong> IFAM</strong>,
-      estou cursando Análise e desenvolvimento de Sistemas na <strong>Univali</strong>
-      e espero ser um engenheiro de backend no futuro ^^o
-    </p>
-    <h3>Aqui estão alguns de meus links sociais:</h3>
-    <ul>
-      <li><a href="https://github.com/lik3as" target="_blank">Github</a></li>
-      <li><a href="https://twitter.com/daddyblue_" target="_blank">Twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/davi-almeida-da-costa-85a12323a/"
-          target="_blank">Linkedin</a></li></ul>
-    </ul>
-    <span><br></span>
-
-    <picture>
-      <source media="(max-width: 800px)" srcset="/assets?img=iconfedora.png" type="image/png">
-      <source media="(max-width: 1100px)" srcset="/assets?img=icongentoo.png" type="image/png">
-      <img src="/assets?img=iconubuntu.png" width="300px" height="300px" alt="Flex Image">
-    </picture>
-
-    <span><br></span>
-    
+    <div id="about">
+      <div class="title"><h3>Sobre mim: </h3></div>
+      <p>Meu nome é davi, sou <strong>desenvolvedor</strong> contratado atualmetne pela
+        NCA Tech, tenho curso técnico em programação de jogos no<strong> IFAM</strong>,
+        estou cursando Análise e desenvolvimento de Sistemas na <strong>Univali</strong><br>
+        Desenvolvedor Web & Mobile Full Stack, domino bem a língua <strong>inglesa</strong> 
+        e posso me adaptar rapidamente a novas tecnologias.
+        Porém, preferencialmente, na área de backend, tenologias nodejs são as mais conhecidas.
+      </p>
+    <div class="title"><h3>Tech Stack: </h3></div>
     <div class="wrapper">
-      <a href="https://www.youtube.com/watch?v=LqDIKJ8pq8Q" target="_blank"><img src="/assets?img=cybertapes.jpg" width="350px" height="350px"></a>
-      <a href="https://www.youtube.com/watch?v=J0N14v0uh5k" target="_blank"><img src="/assets?img=piscar_olhos.jpg" width="350px" height="350px"></a>
-      <a href="https://www.youtube.com/watch?v=aHOMvvXDq0s" target="_blank"><img src="/assets?img=sementinha_mal.jpg" width="350px" height="350px"></a>
-      <a href="https://www.youtube.com/watch?v=Q8oS_B6IaKE" target="_blank"><img src="/assets?img=shigeo.jpg" width="350px" height="350px"></a>
+      <img src="/assets?img=icon_dart.png" width="150px" height="150px">
+      <img src="/assets?img=icon_cpp.png" width="150px" height="150px">
+      <img src="/assets?img=icon_java.jpg" width="150px" height="150px">
+      <img src="/assets?img=icon_psql.png" width="150px" height="150px"> 
+      <img src="/assets?img=icon_git.png" width="150px" height="150px">
+      <img src="/assets?img=icon_nodejs.png" width="150px" height="150px">
+      <img src="/assets?img=icon_mysql.png" width="150px" height="150px">
+      <div style="width: 150px;"></div>
     </div>
+    </div>
+    <div id="skills">
+      <div id="links">
+        <div class="title"><h3>Aqui estão alguns de meus links sociais: </h3></div>
+        <ul type="circle">
+          <li><a href="https://github.com/lik3as" target="_blank">Github</a></li>
+          <br>
+          <li><a href="https://twitter.com/daddyblue_" target="_blank">Twitter</a></li>
+          <br>
+          <li><a href="https://www.linkedin.com/in/davi-almeida-da-costa-85a12323a/"
+              target="_blank">Linkedin</a></li></ul>
+        </ul>
+        <span><br></span>
 
-    <audio preload="auto" controls>
-      <source src="evilseed.mp3" type="audio/mp3">
-      <p>Seu navegador não é compatível com este tipo de áudio</p>
-    </audio>
 
-  <span><br><br></span>
-  <h2>Se liga no iframe: <br></h2>
-  
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/lin8YHV9tvo"
-    title="Sabotage~~~" frameborder="0" allow="accelerometer; autoplay; clipboard-write;a
-    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-  </iframe>
+        <div class="title"><h3>Possuo experiência com distribuições Linux: </h3></div>
+
+        <picture>
+          <source media="(max-width: 800px)" srcset="/assets?img=iconfedora.png" type="image/png">
+          <source media="(max-width: 1100px)" srcset="/assets?img=icongentoo.png" type="image/png">
+          <img src="/assets?img=iconubuntu.png" width="300px" height="300px" alt="Flex Image">
+        </picture>
+
+        <span><br></span>
+      </div>
 
   </div>
+
 </body>
 </html>

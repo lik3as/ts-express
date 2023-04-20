@@ -18,14 +18,15 @@ div{
 
 .title{
     -webkit-text-fill-color: rgb(0, 174, 0);
-    font-size: 115%;
+    font-size: 95%;
 }
 
 #about{
     font-size: 120%;
 }
+
 #about > p{
-    font-size: 22px;
+    font-size: 18px;
     margin-right: 10%;
     margin-top: 4.6%;
     text-align: left;
@@ -35,7 +36,12 @@ div{
     font-size: 18px;
     text-align: left;
     display: grid;
-    grid-template-columns: 55% 50%;
+    grid-template-columns: 55% 45%;
+}
+
+#linux > img{
+    width: 300px;
+    height: 300px;
 }
 
 .wrapper{
@@ -44,11 +50,67 @@ div{
     grid-template-columns: 50% 50%;
 }
 
-@media (min-width: 800px) {  
+.wrapper{
+    justify-content: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.wrapper > img{
+    width: 100px;
+    height: 100px;
+}
+
+#linux{
+    text-align: center  ;
+}
+
+
+#linux > img{
+    width: 150px;
+    height: 150px;
+}
+
+
+@media (min-width: 550px) {  
+    #linux > img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .wrapper > img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #about > p{
+        font-size: 22px;
+        margin-right: 10%;
+        margin-top: 4.6%;
+        text-align: left;
+    }
+
+    .title{
+        -webkit-text-fill-color: rgb(0, 174, 0);
+        font-size: 115%;
+    }
+
+
+    #links{
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 900px) {  
     .wrapper{
         justify-content: left;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    #linux > img{
+        width: 190px;
+        height: 190px;
     }
 }
 
@@ -56,8 +118,4 @@ div{
 li{
     font-size: 117%;
     -webkit-text-fill-color: white;
-}
-
-#links{
-    font-size: 120%;
 }
